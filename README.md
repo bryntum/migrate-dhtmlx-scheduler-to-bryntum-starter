@@ -113,4 +113,4 @@ Run the local dev server by running the command following command:
 npm start
 ```
 
-You’ll see a DHTMLX Scheduler with ten events. The scheduler will have full CRUD functionality.
+You’ll see a DHTMLX Scheduler with ten events when you visit http://localhost:1337. The scheduler will have full CRUD functionality.
