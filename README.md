@@ -2,7 +2,7 @@
 
 ## Set up a MySQL database locally
 
-First set up a MySQL database locally. We’ll install MySQL Server and MySQL Workbench. MySQL Workbench is a MySQL GUI that we’ll use to create a database with tables for the Scheduler data and to run queries. Download MySQL Server and MySQL Workbench from the MySQL community downloads page. If you’re using Windows, you can use the MySQL Installer to download the MySQL products. Use the default configurations when configuring MySQL Server and Workbench. Make sure that you configure the MySQL Server to start at system startup for convenience.
+First to set up a MySQL database locally we'll install MySQL Server and MySQL Workbench. MySQL Workbench is a MySQL GUI that we’ll use to create a database with tables for the Scheduler data and to run queries. Download MySQL Server and MySQL Workbench from the MySQL community downloads page. If you’re using Windows, you can use the MySQL Installer to download the MySQL products. Use the default configurations when configuring MySQL Server and Workbench. Make sure that you configure the MySQL Server to start at system startup for convenience.
 
 Open the MySQL Workbench desktop application. Open the local instance of the MySQL Server that you configured.
 
@@ -10,7 +10,7 @@ We’ll write our MySQL queries in the query tab and execute the queries by pres
 
 ## Create a MySQL database for the DHTMLX data: Adding tables and example data
 
-Let’s run some MySQL queries in MySQL Workbench to create, use, and populate a database for our DHTMLX Scheduler. Execute the following query to create a database called dhtmlx_bryntum_scheduler:
+Let’s run some MySQL queries in MySQL Workbench to create, use, and populate a database for our DHTMLX Scheduler. Execute the following query to create a database called `dhtmlx_bryntum_scheduler`:
 
 
 ```sql
@@ -23,7 +23,7 @@ Run the following query so that we set our newly created database for use:
 USE dhtmlx_bryntum_scheduler;
 ```
 
-Let’s create the two tables that we’ll need for our DHTMLX Scheduler data: dhtmlx_scheduler_events and dhtmlx_scheduler_resources:
+Let’s create the two tables that we’ll need for our DHTMLX Scheduler data: `dhtmlx_scheduler_events` and `dhtmlx_scheduler_resources`:
 
 ```sql
 CREATE TABLE `dhtmlx_scheduler_events` (
@@ -84,16 +84,17 @@ Once you've downloaded the trial code, copy the `dhtmlxscheduler.js` and `dhtmlx
 
 Install the dependencies by running the following command:
 
-```
+```bash
 npm install
 ```
-In the server.js` file, the Express server uses the MySQL2 library to connect to MySQL and run queries.
+
+In the `server.js` file, the Express server uses the MySQL2 library to connect to MySQL and run queries.
 
 
 The `serverConfig` function runs when the server is started. It connects to the MySQL database. It also has some helper functions that are used for CRUD operations.
 
 
-The `index.html` file in the public folder contains the HTML, CSS, and JavaScript for our DHTMLX Scheduler. We load the DHTMLX Scheduler JavaScript and CSS from the DHTMLX code that we copid into the `public` folder. The scheduler is initialized using the `init` method.
+The `index.html` file in the public folder contains the HTML, CSS, and JavaScript for our DHTMLX Scheduler. We load the DHTMLX Scheduler JavaScript and CSS from the DHTMLX code that we copied into the `public` folder. The scheduler is initialized using the `init` method.
 
 Now create a `.env` file in the root folder and add the following lines for connecting to your MySQL database:
 
