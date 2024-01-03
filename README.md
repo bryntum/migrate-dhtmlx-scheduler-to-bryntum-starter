@@ -61,6 +61,15 @@ VALUES (1, 'Meet new client', '2024-01-08 08:00:00', '2024-01-08 12:00:00', 1),
        (10, 'Interview', '2024-01-08 09:00:00', '2024-01-08 10:00:00', 5);
 ```
 
+You can view the events table with the following command:
+
+```sql
+SELECT * FROM dhtmlx_scheduler_events;
+```
+
+<img width="1187" alt="CleanShot 2024-01-03 at 12 19 46@2x" src="https://github.com/bryntum/migrate-dhtmlx-scheduler-to-bryntum-starter/assets/37709578/bc66f242-548f-4e0b-b61a-a07845a36e53">
+
+
 Add some example resources data to the dhtmlx_scheduler_resources table:
 
 ```sql
@@ -72,6 +81,15 @@ VALUES (1, 'Frank'),
        (5, 'Ben'),
        (6, 'Natalie');
 ```
+
+You can view the resources table with the following command:
+
+```sql
+SELECT * FROM dhtmlx_scheduler_resources;
+```
+
+<img width="444" alt="CleanShot 2024-01-03 at 12 21 45@2x" src="https://github.com/bryntum/migrate-dhtmlx-scheduler-to-bryntum-starter/assets/37709578/75089119-c5ab-4ab7-9b44-c74620b0a426">
+
 
 ## Get the DHTMLX Scheduler PRO trial code
 
