@@ -132,3 +132,6 @@ npm start
 ```
 
 You’ll see a DHTMLX Scheduler with ten events when you visit http://localhost:1337. The scheduler will have full CRUD functionality.
+
+<img width="1257" alt="CleanShot 2024-01-03 at 12 23 08@2x" src="https://github.com/bryntum/migrate-dhtmlx-scheduler-to-bryntum-starter/assets/37709578/60ce8205-104c-4baa-a613-3c83b688d5de">
+
